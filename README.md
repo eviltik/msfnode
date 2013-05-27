@@ -5,10 +5,17 @@ msfnode
 
 It make RPC calls using http/https webservices of msfrpcd daemon.
 
-Metasploit API is really well done, it's not necessary to develop a wrapper for each API functions. Just RTMF : [Metasploit Remote API Documentation](https://community.rapid7.com/search.jspa?view=content&resultTypes=document&dateRange=all&q=Remote+API&rankBy=relevance&contentType=document&containerType=&container=&containerName=&userID=&numResults=15 "Metasploit Remote API Documentation")
+Metasploit API is really well done, it's not necessary to develop a wrapper for each API functions. Just RTMF :
+[Metasploit Remote API Documentation](https://community.rapid7.com/search.jspa?view=content&resultTypes=document&dateRange=all&q=Remote+API&rankBy=relevance&contentType=document&containerType=&container=&containerName=&userID=&numResults=15 "Metasploit Remote API Documentation")
+
 
 Usage sample
 =========
+
+Note: do not forget to launch msfrpcd with this syntax if you want to run tests :
+```
+./msfrpcd -U myLogin -P myPassword -f
+```
 
 ```
 var metasploitClient = require('metasploitJSClient');
@@ -71,9 +78,7 @@ Just by curiosity, if you are using this module, **please star it** !
 
 Thank you
 =======
-Special thanks to the authors of theses nodejs modules :
-* msgpack
-* qjobs
-
-
+Special thanks to authors of theses nodejs modules :
+* [msgpack](https://github.com/pgriess/node-msgpack "msgpack")
+* [qjobs](https://github.com/franck34/qjobs "qjobs")
 

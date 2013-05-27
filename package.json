@@ -4,10 +4,7 @@
   "description": "Metasploit RPC client for nodejs",
   "main": "metasploitJSClient.js",
   "engines": {
-      "node": "~0.8"
-  },
-  "directories": {
-    "test": "tests"
+    "node": "~0.8.x"
   },
   "dependencies": {
     "msgpack": "~0.1.8"
@@ -16,7 +13,7 @@
     "qjobs": "~0.9.8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -27,11 +24,13 @@
     "security"
   ],
   "author": "eviltik",
-  "license": "GPLv3",
+  "license": "BSD",
   "readmeFilename": "README.md",
   "gitHead": "72cc9bd7a1de252a62681eb63fb2308424042457",
   "bugs": {
     "url": "https://github.com/eviltik/msfnode/issues"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
-
