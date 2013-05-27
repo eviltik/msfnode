@@ -23,7 +23,19 @@ var onConnect = function(err,token) {
 }
 
 var metasploitVersion = function() {
-    client.exec(['core.version'],function(err,r) {
+
+    // Next line is the interesting part.
+    //
+    // Do not care about token, it will automaticaly
+    // be added as the second arguments
+    //
+    // The first item of the array if the RPC call
+    // you want to fire, as described in the
+    // metasploit remote api documentation
+
+    var args = ['core.version'];
+
+    client.exec(args,function(err,r) {
 
         if (err) return console.log('Error: '+err);
 
