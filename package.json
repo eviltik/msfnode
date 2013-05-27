@@ -1,0 +1,36 @@
+{
+  "name": "msfnode",
+  "version": "0.8.0",
+  "description": "Metasploit RPC client for nodejs",
+  "main": "metasploitJSClient.js",
+  "engines": {
+      "node": "~0.8"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "msgpack": "~0.1.8"
+  },
+  "devDependencies": {
+    "qjobs": "~0.9.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eviltik/msfnode.git"
+  },
+  "keywords": [
+    "metasploit",
+    "security"
+  ],
+  "author": "eviltik",
+  "license": "GPLv3",
+  "readmeFilename": "README.md",
+  "gitHead": "72cc9bd7a1de252a62681eb63fb2308424042457",
+  "bugs": {
+    "url": "https://github.com/eviltik/msfnode/issues"
+  }
+}
