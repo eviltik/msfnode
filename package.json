@@ -1,6 +1,6 @@
 {
   "name": "msfnode",
-  "version": "0.8.0",
+  "version": "0.5.0",
   "description": "Metasploit RPC client for nodejs",
   "main": "metasploitJSClient.js",
   "engines": {
@@ -24,7 +24,7 @@
     "security"
   ],
   "author": "eviltik",
-  "license": "BSD",
+  "license": "GPLv3",
   "readmeFilename": "README.md",
   "gitHead": "72cc9bd7a1de252a62681eb63fb2308424042457",
   "bugs": {
