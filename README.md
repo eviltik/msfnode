@@ -7,9 +7,55 @@ It make RPC calls using http/https webservices of msfrpcd daemon.
 
 Metasploit API is really well done, it's not necessary to develop a wrapper for each API functions. Just RTMF : [Metasploit Remote API Documentation](https://community.rapid7.com/search.jspa?view=content&resultTypes=document&dateRange=all&q=Remote+API&rankBy=relevance&contentType=document&containerType=&container=&containerName=&userID=&numResults=15 "Metasploit Remote API Documentation")
 
+Usage
+=========
+
+```
+var metasploitClient = require('metasploitJSClient');
+
+
+var onConnect = function(err,token) {
+    if (err) {
+        console.log(err.error_message);
+        process.exit(0);
+    }
+    metasploitVersion();
+}
+
+var metasploitVersion = function() {
+    client.exec(['core.version'],function(err,r) {
+
+        if (err) return console.log('Error: '+err);
+
+        console.log('-> Version: '+r.version);
+        console.log('-> Api: '+r.api);
+        console.log('-> Ruby: '+r.ruby);
+    });
+}
+
+
+var client = new metasploitClient({
+    login:'myLogin',
+    password:'myPassword',
+    host:'localhost',   // optional
+    port:55553,         // optional
+    protocol:'https',   // optional
+    apiVersion:'1.0',   // optional
+    apiPath:'/api/'     // optional
+});
+
+client.on('connected',onConnect);
+
+```
+
+
 The tests directory contains some examples.
 
+Just by curiosity, if you are using this module, please star it !
+
 I wish you some good hacks !
+
+
 
 Special thanks to the authors of theses nodejs modules :
 * msgpack
