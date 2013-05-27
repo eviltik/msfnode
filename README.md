@@ -7,7 +7,7 @@ It make RPC calls using http/https webservices of msfrpcd daemon.
 
 Metasploit API is really well done, it's not necessary to develop a wrapper for each API functions. Just RTMF : [Metasploit Remote API Documentation](https://community.rapid7.com/search.jspa?view=content&resultTypes=document&dateRange=all&q=Remote+API&rankBy=relevance&contentType=document&containerType=&container=&containerName=&userID=&numResults=15 "Metasploit Remote API Documentation")
 
-Usage
+Usage sample
 =========
 
 ```
@@ -60,15 +60,17 @@ client.on('connected',onConnect);
 
 ```
 
+Have good hacks !
+=======
 
-The tests directory contains some examples.
+The tests directory contains more examples.
 
-Just by curiosity, if you are using this module, please star it !
-
-I wish you some good hacks !
+Just by curiosity, if you are using this module, **please star it** !
 
 
 
+Thank you
+=======
 Special thanks to the authors of theses nodejs modules :
 * msgpack
 * qjobs
