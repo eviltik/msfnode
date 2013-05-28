@@ -31,14 +31,12 @@ var onConnect = function(err,token) {
 
 var metasploitVersion = function() {
 
-    // Next line is the interesting part.
-    //
     // Do not care about token, it will automaticaly
     // be added as the second arguments
     //
-    // The first item of the array if the RPC call
-    // you want to fire, as described in the
-    // metasploit remote api documentation
+    // The first value of the array is the function
+    // you want to call. Full list is available
+    // in metasploit remote api documentation
 
     var args = ['core.version'];
 
