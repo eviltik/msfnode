@@ -17,7 +17,7 @@ npm install msfnode
 ```
 
 
-Usage sample
+How to use
 =========
 
 Note: do not forget to launch msfrpcd with this syntax if you want to run tests :
@@ -87,4 +87,7 @@ Thank you
 Special thanks to authors of theses nodejs modules :
 * [msgpack](https://github.com/pgriess/node-msgpack "msgpack")
 * [qjobs](https://github.com/franck34/qjobs "qjobs")
+
+and [dailyjs](http://dailyjs.com/) ;)
+
 
