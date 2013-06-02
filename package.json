@@ -4,13 +4,13 @@
   "description": "Metasploit RPC client for nodejs",
   "main": "metasploitJSClient.js",
   "engines": {
-    "node": "~0.8.x"
+    "node": "*"
   },
   "dependencies": {
-    "msgpack": "~0.1.8"
+    "msgpack": "0.1.8"
   },
   "devDependencies": {
-    "qjobs": "~0.9.8"
+    "qjobs": "latest"
   },
   "scripts": {
     "test": "make test"
