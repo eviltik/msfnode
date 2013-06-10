@@ -2,8 +2,7 @@
 var assert = require('assert');
 var metasploitClient = require('../metasploitJSClient');
 
-var q = new require('qjobs');
-q.setConcurrency(10); // do not flood msfrpcd ! (
+var q = new require('qjobs')({maxConcurrency:10});
 
 var onConnect = function(err,token) {
     if (err) {
