@@ -26,7 +26,7 @@ Note: do not forget to launch msfrpcd with this syntax if you want to run tests 
 ```
 
 ```
-var metasploitClient = require('metasploitJSClient');
+var metasploitClient = require('msfnode');
 
 
 var onConnect = function(err,token) {
@@ -85,7 +85,7 @@ Just by curiosity, if you are using this module, **please star it** !
 Thank you
 =======
 Special thanks to authors of theses nodejs modules :
-* [msgpack](https://github.com/pgriess/node-msgpack "msgpack")
+* [msgpack5](https://github.com/mcollina/msgpack5 "msgpack")
 * [qjobs](https://github.com/franck34/qjobs "qjobs")
 
 and [dailyjs](http://dailyjs.com/) ;)

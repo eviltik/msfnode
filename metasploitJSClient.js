@@ -3,7 +3,7 @@
     var EventEmitter = require('events').EventEmitter;
     var https = require('https');
     var http = require('http');
-    var msgpack = require('msgpack');
+    var msgpack = require('msgpack5')(), encode = msgpack.encode , decode = msgpack.decode
 
     // Constructor
     var msapi = function (options,cb) {
@@ -12,7 +12,7 @@
     }
 
     msapi.prototype.rpc = function(args,cb) {
-        var data = msgpack.pack(args);
+        var data = encode(args);
         var clength = Buffer.byteLength(data.toString('ascii'));
 
         var options = {
@@ -36,7 +36,7 @@
             });
 
             res.on('end',function() {
-                var res = msgpack.unpack(Buffer.concat(bufs));
+                var res = decode(Buffer.concat(bufs));
                 if (res.error) return cb(res.error_message,res);
                 return cb(null,res);
             });
